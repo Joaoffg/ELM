@@ -1,7 +1,7 @@
-# ELM
+## ELM
 The Erasmian Language Model
 
-ELM is a community driven large language model tailored to the research and education needs of Erasmus University (Netherlands) students and staff.
+ELM is a community driven large language model tailored to the research and education needs of Erasmus University (EUR, Netherlands) students and staff.
 
 Do you want to contribute? Fill in the form here: https://erasmusuniversity.eu.qualtrics.com/jfe/form/SV_2luZ3o6JpIuRSgC
 
@@ -15,3 +15,30 @@ The model draws inspiration from ChatGPT in terms of architecture, but it aims t
 The true richness of ELM lies in the way its training data is generated. What is the "state-of-the-art" model may change quickly, but quality data will maintain its relevance and ensure that ELM and its future iterations serve the needs of the community that nurtured it.
 
 We hope that the ELM experience becomes a template for community driven, decentralized and purpuseful AI development and application.
+
+# Models
+
+ELM_Small Pre-trained - https://surfdrive.surf.nl/files/index.php/s/9EQ0V9XlfbqZJpb/download
+A 166M parameter Llama2 based model trained for 3 epochs on the ELM dataset
+
+ELM_Large Pre-trained - https://surfdrive.surf.nl/files/index.php/s/Qe4kqhx3o8BScvu
+A 900M parameter Llama2 based model trained for 3 epochs on the ELM data
+
+ELM_Large Chat - See adapter weights in GitHub repo
+A 900M parameter Llama2 based model fine-tuned on the ELM fine-tuning data, the Stanford Alpaca data, and a translated Dutch version of Stanford Alpaca (https://huggingface.co/datasets/BramVanroy/alpaca-cleaned-dutch)
+
+# Datasets
+
+A sample of the dataset can be found in the GitHub repository. The pretraining dataset consists of:
+- All public MA theses from Erasmus University, accessible here: https://thesis.eur.nl/
+- All Erasmus University research outputs, accessible here: https://pure.eur.nl/
+- A student generated dataset for chat fine tuning and RLHF: ELM Fine-tune dataset_2023_10_09.xlsx
+- The Stanford Alpaca dataset for fine-tuning: https://github.com/tatsu-lab/stanford_alpaca?tab=readme-ov-file#data-release
+- The Dutch translated Stanford Alpaca dataset for fine-tuning: https://huggingface.co/datasets/BramVanroy/alpaca-cleaned-dutch
+
+Pretraining data was preprocessed to eliminate chunks of text with less than 25 tokens.
+
+# Model training
+Training scripts are provided in the GitHub repository. All models were trained for three epochs in the EUR datasets. Fine tuning LoRA parameters are available in the fine-tuning scripts.
+
+We trained our own EUR SentencePiece tokenizer based on the EUR pretraining data.
