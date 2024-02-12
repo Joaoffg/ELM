@@ -37,6 +37,6 @@ A sample of the dataset can be found in the GitHub repository. The pretraining d
 Pretraining data was preprocessed to eliminate chunks of text with less than 25 tokens.
 
 # Model training
-Training scripts are provided in the GitHub repository. All models were trained for three epochs in the EUR datasets. Fine tuning LoRA parameters are available in the fine-tuning scripts.
+Training scripts are provided in the GitHub repository, inspired by https://github.com/tloen/alpaca-lora. All models were trained for three epochs in the EUR datasets. Fine tuning LoRA parameters are available in the fine-tuning scripts.
 
 We trained our own EUR SentencePiece tokenizer based on the EUR pretraining data.
