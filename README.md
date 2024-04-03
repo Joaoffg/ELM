@@ -3,7 +3,7 @@ The Erasmian Language Model
 
 ELM is a community driven large language model tailored to the research and education needs of Erasmus University (EUR, Netherlands) students and staff.
 
-The model draws inspiration from ChatGPT in terms of architecture, but it aims to be privacy senstitive, environmentally constious, and from and for the Erasmus community. Here are a few key points of ELM:
+The model draws inspiration from ChatGPT in terms of architecture, but it aims to be privacy sensitive, environmentally conscious, and from and for the Erasmus community. Here are a few key points of ELM:
 
 1. The undelying language model is trained and fine-tuned on academic outputs from Erasmus University, such as scientific papers or student theses;
 2. Training and fine-tuning the model is a joint effort of students and staff, transparent for all parties involved;
