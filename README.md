@@ -16,10 +16,10 @@ We hope that the ELM experience becomes a template for community driven, decentr
 
 # Models
 
-ELM_Small Pre-trained - https://surfdrive.surf.nl/files/index.php/s/9EQ0V9XlfbqZJpb/download
+ELM_Small Pre-trained
 A 166M parameter Llama2 based model trained for 3 epochs on the ELM dataset
 
-ELM_Large Pre-trained - https://surfdrive.surf.nl/files/index.php/s/Qe4kqhx3o8BScvu
+ELM_Large Pre-trained
 A 900M parameter Llama2 based model trained for 3 epochs on the ELM data
 
 ELM_Large Chat - See adapter weights in GitHub repo
